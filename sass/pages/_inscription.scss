@@ -1,6 +1,5 @@
 .login-page{
     font-family: 'Oswald', sans-serif;
-    background:#212;
     width: 70%;
     height: 100px;
   }
@@ -11,7 +10,7 @@
     z-index: 1;
   }
   
-  a{
+  .navBar{
     text-decoration:none;
     color:#fff;
     width:120px;
@@ -27,13 +26,13 @@
     background:#fff;
   }
   
-  a:nth-child(1) ~ div{
+  .navBar:nth-child(1) ~ div{
     transition:all .33s linear;
     -webkit-transition:all .33s linear;
     
   }
   
-  a:nth-child(2):hover ~ div {
+  .navBar:nth-child(2):hover ~ div {
     transform:translate(120px);
     -webkit-transform:translate(120px);
     background-color:#e74c3c;
@@ -41,7 +40,7 @@
     -webkit-transition:all .33s linear;
   }
   
-  a:nth-child(3):hover ~ div {
+  .navBar:nth-child(3):hover ~ div {
     transform:translate(120px);
     -webkit-transform:translate(240px);
     background-color:#BF55EC;
@@ -50,7 +49,7 @@
   }
   
   
-  a:nth-child(4):hover ~ div {
+  .navBar:nth-child(4):hover ~ div {
     transform:translate(120px);
     -webkit-transform:translate(360px);
     background-color:#f39c12;
@@ -59,7 +58,7 @@
     -webkit-transition:all .33s linear;
   }
   
-  a:nth-child(5):hover ~ div {
+  .navBar:nth-child(5):hover ~ div {
     transform:translate(120px);
     -webkit-transform:translate(480px);
     background-color:#DDE5F3;
@@ -69,19 +68,19 @@
   }
   
   
-  a:nth-child(2):hover {
+  .navBar:nth-child(2):hover {
     color:#e74c3c;
   }
   
-  a:nth-child(3):hover {
+  .navBar:nth-child(3):hover {
     color:#BF55EC;
   }
   
-  a:nth-child(4):hover {
+  .navBar:nth-child(4):hover {
     color:#f39c12;
   }
 
-  a:nth-child(5):hover {
+  .navBar:nth-child(5):hover {
     color:#DDE5F3;
   }
 
@@ -108,7 +107,7 @@ header .header-logo1{
 }
 
 .signin {
-    background: rgba(44,62,80,0.7);
+    background-color: rgba(44,62,80,0.7);
     padding: 40px;
     width: 250px;
     margin: auto;

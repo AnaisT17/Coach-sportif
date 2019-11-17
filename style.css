@@ -292,13 +292,14 @@ header {
   /*grid-template-columns: repeat(5, 1fr);
   grid-template-rows: minmax(100px, auto);
   max-width: 100px ;*/
-  background-color: #24221F;
+  background-color: #fff;
 }
 
 .portraitMan {
   width: 350px;
   margin-left: 30px;
   padding-top: 30px;
+  z-index: -3;
 }
 
 .ligne_verticale {
@@ -311,24 +312,28 @@ header {
 .textPresentation {
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: #000;
   /*border-radius: 100px;*/
   margin-top: 5px;
   margin-left: 500px;
   width: 50%;
   font-size: 15px;
   font-family: "Roboto", serif;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .nameCoach {
   font-family: "Monoton", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: 80px;
 }
 
-body .login-page {
+.login-page {
   font-family: "Oswald", sans-serif;
-  background: #212;
-  height: 30%;
+  width: 70%;
+  height: 100px;
 }
 
 nav {
@@ -337,7 +342,7 @@ nav {
   z-index: 1;
 }
 
-a {
+.navBar {
   text-decoration: none;
   color: #fff;
   width: 120px;
@@ -353,12 +358,12 @@ div {
   background: #fff;
 }
 
-a:nth-child(1) ~ div {
+.navBar:nth-child(1) ~ div {
   transition: all 0.33s linear;
   -webkit-transition: all 0.33s linear;
 }
 
-a:nth-child(2):hover ~ div {
+.navBar:nth-child(2):hover ~ div {
   transform: translate(120px);
   -webkit-transform: translate(120px);
   background-color: #e74c3c;
@@ -366,7 +371,7 @@ a:nth-child(2):hover ~ div {
   -webkit-transition: all 0.33s linear;
 }
 
-a:nth-child(3):hover ~ div {
+.navBar:nth-child(3):hover ~ div {
   transform: translate(120px);
   -webkit-transform: translate(240px);
   background-color: #BF55EC;
@@ -374,7 +379,7 @@ a:nth-child(3):hover ~ div {
   -webkit-transition: all 0.33s linear;
 }
 
-a:nth-child(4):hover ~ div {
+.navBar:nth-child(4):hover ~ div {
   transform: translate(120px);
   -webkit-transform: translate(360px);
   background-color: #f39c12;
@@ -383,7 +388,7 @@ a:nth-child(4):hover ~ div {
   -webkit-transition: all 0.33s linear;
 }
 
-a:nth-child(5):hover ~ div {
+.navBar:nth-child(5):hover ~ div {
   transform: translate(120px);
   -webkit-transform: translate(480px);
   background-color: #DDE5F3;
@@ -392,19 +397,19 @@ a:nth-child(5):hover ~ div {
   -webkit-transition: all 0.33s linear;
 }
 
-a:nth-child(2):hover {
+.navBar:nth-child(2):hover {
   color: #e74c3c;
 }
 
-a:nth-child(3):hover {
+.navBar:nth-child(3):hover {
   color: #BF55EC;
 }
 
-a:nth-child(4):hover {
+.navBar:nth-child(4):hover {
   color: #f39c12;
 }
 
-a:nth-child(5):hover {
+.navBar:nth-child(5):hover {
   color: #DDE5F3;
 }
 
@@ -432,7 +437,7 @@ header .header-logo1 {
 }
 
 .signin {
-  background: rgba(44, 62, 80, 0.7);
+  background-color: rgba(44, 62, 80, 0.7);
   padding: 40px;
   width: 250px;
   margin: auto;
@@ -441,9 +446,74 @@ header .header-logo1 {
   margin-left: 180px;
 }
 
-.imageLogin {
+form {
+  width: 240px;
+  text-align: center;
+}
+
+input {
+  width: 240px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 200px;
+  padding: 10px 0;
+  transition: border 0.5s;
+  outline: none;
+  color: #fff;
+}
+
+input[type=button] {
+  border: none;
+  width: 190px;
+  background: white;
+  color: #000;
+  font-size: 16px;
+  line-height: 25px;
+  padding: 10px 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  color: #fff;
+  background-color: black;
+}
+
+h2 {
+  color: white;
+}
+
+a {
+  color: yellow;
+  text-decoration: blink;
+}
+
+a:hover {
+  color: skyblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 500px;
+}
+
+::placeholder {
+  color: aliceblue;
+  opacity: 0.8;
+  /*Firefox*/
+}
+
+.imageLogin {
+  width: 60%;
+  height: 300px;
+  /*
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  z-index: -2;
 }
 
 /*# sourceMappingURL=style.css.map */
