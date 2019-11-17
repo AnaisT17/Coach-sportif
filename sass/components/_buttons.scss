@@ -1,0 +1,44 @@
+/*------------ BUTTON LOGIN ---------------*/
+
+.button{
+    /*=====Undefult-settings====*/
+    border:none;
+    outline:none;
+    /*=========================*/
+    display:block;
+    margin:20px auto;
+    border-radius:50px 50px 50px 50px;
+    width:100px;
+    height:30px;
+    font-size:15px;
+    font-weight:350;
+    font-family: 'Roboto Mono' sans-serif;
+    }
+
+.tow{
+    background-color:transparent;
+    color:#FFFFFF;
+    border:3px solid #FFFFFF;
+    position:relative;
+    transition:all .5s ease-in-out;
+    overflow: hidden;
+    border-radius:1px 1px 1px 1px;
+    z-index: 2;
+    font-weight:bold;
+}
+.tow:before{
+    content:"";
+    display:inline-block;
+    position:absolute;
+    width:200px;
+    height:57.1px;
+    background-color:#829FD9;
+    left:-312px;
+    top:0px;
+    z-index:-1;
+    transition:all .5s ease-in-out;
+    padding:1px;
+}
+.tow:hover:before{
+    transform:translate(309px,0)
+}
