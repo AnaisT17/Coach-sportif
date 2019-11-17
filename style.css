@@ -327,9 +327,6 @@ header .header-logo {
 body .login-page {
   font-family: "Oswald", sans-serif;
   background: #212;
-  background-image: url(images/Working-Out-With-Chalk.jpg);
-  /*background-repeat: no-repeat;*/
-  /*background-size: cover;*/
   height: 30%;
 }
 
@@ -431,6 +428,21 @@ header .header-logo1 {
   text-transform: uppercase;
   align-content: center;
   margin: 0 auto;
+}
+
+.signin {
+  background: rgba(44, 62, 80, 0.7);
+  padding: 40px;
+  width: 250px;
+  margin: auto;
+  margin-top: 80px;
+  height: 400px;
+  margin-left: 180px;
+}
+
+.imageLogin {
+  width: 100%;
+  height: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
